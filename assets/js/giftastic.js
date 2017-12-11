@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
         var topics = ['dogs', 'cats', 'birds', 'fish'];
-        AddGiphyButton(topics);
+        AddGiphyButton();
 
         function AddGiphyButton()
         {
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $('#add-giphy').on('click', function(event) {
             
         event.preventDefault();
-        var giphy = $('#giphy-input').val().trim();
+         var giphy = $('#giphy-input').val().trim();
         console.log(giphy);
         
         if(giphy)
